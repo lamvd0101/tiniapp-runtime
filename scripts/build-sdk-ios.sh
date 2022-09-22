@@ -1,5 +1,5 @@
 # 1. Build runtime bundle
-cd tiniapp-runtime
+cd packages/tiniapp-runtime
 yarn
 sh scripts/bundle-ios.sh
 
