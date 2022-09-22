@@ -3,10 +3,7 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/*"
-    ],
-    "nohoist": [
-      "**/tiniapp-runtime"
+      "packages/!(tiniapp-runtime)/**"
     ]
   },
   "devDependencies": {
