@@ -3,5 +3,11 @@ cd packages/tiniapp-runtime
 yarn
 sh scripts/bundle-ios.sh
 
-# 2. Build framework
-yarn workspace tiniapp-sdk-ios build
+# 2. Build ios framework
+cd -
+cd packages/tiniapp-sdk-ios
+pod install
+sh Scripts/build-fw.sh
+
+# 3.
+cd -
