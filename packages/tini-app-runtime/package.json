@@ -2,9 +2,6 @@
   "name": "tini-app-runtime",
   "version": "0.0.1",
   "private": true,
-  "engines": {
-    "node": "<17"
-  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "cd ios && pod install && cd - && react-native run-ios",
