@@ -1,0 +1,65 @@
+source 'https://github.com/lamvd0101/tiniapp-third-party-ios'
+
+platform :ios, '11.0'
+use_frameworks!(:linkage => :static)
+
+target 'TiniAppSDK' do
+  # React-Native 0.61
+  pod 'FBLazyVector'
+  pod 'FBReactNativeSpec'
+  pod 'RCTRequired'
+  pod 'RCTTypeSafety'
+  pod 'React'
+  pod 'React-Core'
+  pod 'React-CoreModules'
+  pod 'React-Core/DevSupport'
+  pod 'React-RCTActionSheet'
+  pod 'React-RCTAnimation'
+  pod 'React-RCTBlob'
+  pod 'React-RCTImage'
+  pod 'React-RCTLinking'
+  pod 'React-RCTNetwork'
+  pod 'React-RCTSettings'
+  pod 'React-RCTText'
+  pod 'React-RCTVibration'
+  pod 'React-Core/RCTWebSocket'
+  
+  pod 'React-cxxreact'
+  pod 'React-jsi'
+  pod 'React-jsiexecutor'
+  pod 'React-jsinspector'
+  pod 'ReactCommon/jscallinvoker'
+  pod 'ReactCommon/turbomodule/core'
+  pod 'Yoga'
+  
+  pod 'DoubleConversion'
+  pod 'glog'
+  pod 'Folly'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+    end
+  end
+  
+  ## Fix for XCode 12.5
+  find_and_replace("./Pods/React-Core/React/CxxBridge/RCTCxxBridge.mm",
+  "_initializeModules:(NSArray<id<RCTBridgeModule>> *)modules", "_initializeModules:(NSArray<Class> *)modules")
+  find_and_replace("./Pods/ReactCommon/ReactCommon/turbomodule/core/platform/ios/RCTTurboModuleManager.mm",
+  "RCTBridgeModuleNameForClass(module))", "RCTBridgeModuleNameForClass(Class(module)))")
+end
+
+def find_and_replace(dir, findstr, replacestr)
+  Dir[dir].each do |name|
+    text = File.read(name)
+    replace = text.gsub(findstr,replacestr)
+    if text != replace
+      puts "Fix: " + name
+      File.open(name, "w") { |file| file.puts replace }
+      STDOUT.flush
+    end
+  end
+  Dir[dir + '*/'].each(&method(:find_and_replace))
+end

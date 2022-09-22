@@ -1,29 +1,11 @@
 {
   "name": "tiniapp-sdk-ios",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "",
   "author": "Liam Vuong <lamvd0101@gmail.com>",
   "homepage": "https://github.com/lamvd0101/tiniapp-sdk#readme",
   "license": "MIT",
-  "main": "lib/tiniapp-sdk-ios.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lamvd0101/-sdk.git"
-  },
   "scripts": {
-    "test": "node ./__tests__/-sdk-ios.test.js"
-  },
-  "bugs": {
-    "url": "https://github.com/lamvd0101/-sdk/issues"
+    "build": "pod install && sh build.sh"
   }
 }

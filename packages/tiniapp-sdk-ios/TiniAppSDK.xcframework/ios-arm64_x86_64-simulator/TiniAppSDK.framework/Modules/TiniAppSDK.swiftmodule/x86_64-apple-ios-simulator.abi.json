@@ -1,0 +1,42 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TiniAppSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "React",
+        "printedName": "React",
+        "declKind": "Import",
+        "moduleName": "TiniAppSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TiniAppBridge",
+        "printedName": "TiniAppBridge",
+        "declKind": "Class",
+        "usr": "s:10TiniAppSDK0aB6BridgeC",
+        "mangledName": "$s10TiniAppSDK0aB6BridgeC",
+        "moduleName": "TiniAppSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
