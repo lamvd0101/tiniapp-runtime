@@ -6,6 +6,6 @@
   "homepage": "https://github.com/lamvd0101/tiniapp-sdk#readme",
   "license": "MIT",
   "scripts": {
-    "build": "pod install && sh build.sh"
+    "build": "pod install && sh Scripts/build-fw.sh"
   }
 }
