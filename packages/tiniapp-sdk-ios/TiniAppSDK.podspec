@@ -6,13 +6,13 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
 
   s.authors      = { "Vuong Duc Lam" => "lam.vuong@tiki.vn" }
-  s.homepage     = "https://github.com/lamvd0101/tini-app-sdk"
+  s.homepage     = "https://github.com/lamvd0101/tiniapp-sdk-ios"
 
   s.ios.deployment_target = "11.0"
   s.swift_version = "5.0"
   s.static_framework = true
 
-  s.source       = { :git => "git@github.com:lamvd0101/tini-app-sdk.git" }
+  s.source       = { :git => "git@github.com:lamvd0101/tiniapp-sdk-ios.git" }
   # s.source_files = "ios", "**/*.{h,m,swift}"
   s.vendored_frameworks = "TiniAppSDK.xcframework"
 
