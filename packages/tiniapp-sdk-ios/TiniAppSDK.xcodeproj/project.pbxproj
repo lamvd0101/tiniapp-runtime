@@ -8,16 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		83E012FE5BECEDF893AE2DD0 /* Pods_TiniAppSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B05AB0D81B5B46DC49E944E /* Pods_TiniAppSDK.framework */; };
+		A82FC5BC28DC64C600408DD8 /* TiniAppSDK+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC5BB28DC64C600408DD8 /* TiniAppSDK+Bundle.swift */; };
+		A82FC5BE28DC665600408DD8 /* TiniAppSDK+RCTRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC5BD28DC665600408DD8 /* TiniAppSDK+RCTRootView.swift */; };
+		A82FC5C128DC66A000408DD8 /* TiniAppSDKKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC5C028DC66A000408DD8 /* TiniAppSDKKey.swift */; };
+		A82FC5C328DC67C000408DD8 /* TiniAppSDK+RCTBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC5C228DC67C000408DD8 /* TiniAppSDK+RCTBridge.swift */; };
 		A87EC0BC28D9A65400F0E1E1 /* TiniAppSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A87EC0AE28D9A65300F0E1E1 /* TiniAppSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8D3BE1428D9E5DD0065BAD4 /* TiniAppSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D3BE1328D9E5DD0065BAD4 /* TiniAppSDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C6B10235F4D707075436353 /* Pods-TiniAppSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppSDK.debug.xcconfig"; path = "Target Support Files/Pods-TiniAppSDK/Pods-TiniAppSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		1B05AB0D81B5B46DC49E944E /* Pods_TiniAppSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiniAppSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82FC5BB28DC64C600408DD8 /* TiniAppSDK+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+Bundle.swift"; sourceTree = "<group>"; };
+		A82FC5BD28DC665600408DD8 /* TiniAppSDK+RCTRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+RCTRootView.swift"; sourceTree = "<group>"; };
+		A82FC5C028DC66A000408DD8 /* TiniAppSDKKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppSDKKey.swift; sourceTree = "<group>"; };
+		A82FC5C228DC67C000408DD8 /* TiniAppSDK+RCTBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+RCTBridge.swift"; sourceTree = "<group>"; };
 		A87EC0AB28D9A65300F0E1E1 /* TiniAppSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TiniAppSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87EC0AE28D9A65300F0E1E1 /* TiniAppSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiniAppSDK.h; sourceTree = "<group>"; };
-		A8D3BE1328D9E5DD0065BAD4 /* TiniAppSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppSDK.swift; sourceTree = "<group>"; };
 		BA5E84155232659BE7FF0E14 /* Pods-TiniAppSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppSDK.release.xcconfig"; path = "Target Support Files/Pods-TiniAppSDK/Pods-TiniAppSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +56,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A82FC5BA28DC64A700408DD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A82FC5BB28DC64C600408DD8 /* TiniAppSDK+Bundle.swift */,
+				A82FC5BD28DC665600408DD8 /* TiniAppSDK+RCTRootView.swift */,
+				A82FC5C228DC67C000408DD8 /* TiniAppSDK+RCTBridge.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A82FC5BF28DC668900408DD8 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				A82FC5C028DC66A000408DD8 /* TiniAppSDKKey.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		A87EC0A128D9A65300F0E1E1 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +95,9 @@
 		A87EC0AD28D9A65300F0E1E1 /* TiniAppSDK */ = {
 			isa = PBXGroup;
 			children = (
+				A82FC5BF28DC668900408DD8 /* Configs */,
+				A82FC5BA28DC64A700408DD8 /* Extensions */,
 				A87EC0AE28D9A65300F0E1E1 /* TiniAppSDK.h */,
-				A8D3BE1328D9E5DD0065BAD4 /* TiniAppSDK.swift */,
 			);
 			path = TiniAppSDK;
 			sourceTree = "<group>";
@@ -183,7 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8D3BE1428D9E5DD0065BAD4 /* TiniAppSDK.swift in Sources */,
+				A82FC5BE28DC665600408DD8 /* TiniAppSDK+RCTRootView.swift in Sources */,
+				A82FC5BC28DC64C600408DD8 /* TiniAppSDK+Bundle.swift in Sources */,
+				A82FC5C128DC66A000408DD8 /* TiniAppSDKKey.swift in Sources */,
+				A82FC5C328DC67C000408DD8 /* TiniAppSDK+RCTBridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
