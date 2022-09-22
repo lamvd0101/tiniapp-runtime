@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TiniAppSDK-Swift.h</key>
 		<data>
-		lyvhF6nWu7UIznB9bw0A3AkWwzE=
+		HCBqI4T9Z7TLhXH3ch+qdijAxhA=
 		</data>
 		<key>Headers/TiniAppSDK.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		AEpZAoXwa66vZ+xqr6IHjeCJvZE=
+		4nMGRHF5PDii9hT/AYtkJtHwSHo=
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Tx4lCjq2va1kYcTpC/yTo892Ezo=
+		cQDBjk3HwnPgN5Wm7ipKQeuB3p8=
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Tx4lCjq2va1kYcTpC/yTo892Ezo=
+		cQDBjk3HwnPgN5Wm7ipKQeuB3p8=
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3ythYfKYUox/bmHvLQ51Nz456UU=
+		WOgXngK43W7YWaXGDxIdHS8S1eA=
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		AEpZAoXwa66vZ+xqr6IHjeCJvZE=
+		4nMGRHF5PDii9hT/AYtkJtHwSHo=
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Uha63tmtVuBzN6Jb4b2ds9H3cRQ=
+		kX8gBHYoALV9nkgJjSb9K6U5Vbs=
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Uha63tmtVuBzN6Jb4b2ds9H3cRQ=
+		kX8gBHYoALV9nkgJjSb9K6U5Vbs=
 		</data>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VDJcQdgAQOPWAJ80wZ4lhAScG3g=
+		XvveU1+BFcyXentb/IxvC4Ru6T0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			09yyRMDDi200kyFeUvWPJhLv9RSXpwduwYbkq4LMlzQ=
+			AgYfBUBWAEEw/BqnTDQiY8m1ZAQfbv6RhpE1P87KlMs=
 			</data>
 		</dict>
 		<key>Headers/TiniAppSDK.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			17pBjVUUFe2Yg61EIUS+wN9nYWXjdFx3CxLJXsggs7k=
+			cb1EF6nEezqmkVuZD/2K9dzN75FykorPhn39ZN4TCso=
 			</data>
 		</dict>
 		<key>Modules/TiniAppSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VX+rO5mpgxwE/mOgqpkJAJkZFDRb9FyeBk9yefI7g0w=
+			7A90oud7liTf+qLBTbih7gWbuQCLq7c4SWTlA5Xd534=
 			</data>
 		</dict>
 		<key>Modules/TiniAppSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VX+rO5mpgxwE/mOgqpkJAJkZFDRb9FyeBk9yefI7g0w=
+			7A90oud7liTf+qLBTbih7gWbuQCLq7c4SWTlA5Xd534=
 			</data>
 		</dict>
 		<key>Modules/TiniAppSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IB0RoGUHHCoYOW/mtYffLU1fWpV3EvQ/Yw0lu2afMqY=
+			LqKNLVvnr0ExSk47EC7Skn9x28tn6jcVU/PYvCMZVZs=
 			</data>
 		</dict>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			17pBjVUUFe2Yg61EIUS+wN9nYWXjdFx3CxLJXsggs7k=
+			cb1EF6nEezqmkVuZD/2K9dzN75FykorPhn39ZN4TCso=
 			</data>
 		</dict>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/dmj52F1v0fUyFWGdt7jt6NUtGyaeJzwf/Ag71HXgwg=
+			Ge4YcimTUhj4546csSYqC7c3Elmqi1MmtfqxAxpw77A=
 			</data>
 		</dict>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/dmj52F1v0fUyFWGdt7jt6NUtGyaeJzwf/Ag71HXgwg=
+			Ge4YcimTUhj4546csSYqC7c3Elmqi1MmtfqxAxpw77A=
 			</data>
 		</dict>
 		<key>Modules/TiniAppSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j13vEBa3p/nUcNurVrqJaHI+WqkiMoW6zOesZqtDidY=
+			ULilWzsbXUW7nunTpcx0VgCmhC+PQMEIB/i1lqWVpl4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

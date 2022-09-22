@@ -14,7 +14,8 @@ xcodebuild archive \
   -configuration Release \
   -sdk iphonesimulator \
   SKIP_INSTALL=NO \
-  BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+  BUILD_LIBRARIES_FOR_DISTRIBUTION=YES \
+  clean build
 
 # Device xcarchieve
 xcodebuild archive \
@@ -24,7 +25,8 @@ xcodebuild archive \
   -sdk iphoneos \
   -configuration Release \
   SKIP_INSTALL=NO \
-  BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+  BUILD_LIBRARIES_FOR_DISTRIBUTION=YES \
+  clean build
 
 # Create xcframwork combine of all frameworks
 xcodebuild -create-xcframework \

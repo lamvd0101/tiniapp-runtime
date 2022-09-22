@@ -1,11 +1,8 @@
 {
   "name": "tiniapp-sdk-ios",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "tiniapp-sdk-ios",
   "author": "Liam Vuong <lamvd0101@gmail.com>",
   "homepage": "https://github.com/lamvd0101/tiniapp-sdk#readme",
-  "license": "MIT",
-  "scripts": {
-    "build": "pod install && sh Scripts/build-fw.sh"
-  }
+  "license": "MIT"
 }
