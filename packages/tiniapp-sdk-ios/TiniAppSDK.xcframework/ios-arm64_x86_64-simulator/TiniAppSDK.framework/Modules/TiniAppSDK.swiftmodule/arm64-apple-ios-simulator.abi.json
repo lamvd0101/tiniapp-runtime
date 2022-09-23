@@ -16,6 +16,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TiniAppSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "React",
         "printedName": "React",
         "declKind": "Import",
@@ -481,42 +491,28 @@
     {
       "filePath": "\/Users\/lap02092\/Downloads\/Projects\/Personal\/tiniapp-sdk\/packages\/tiniapp-sdk-ios\/TiniAppSDK\/Configs\/TiniAppSDKKey.swift",
       "kind": "StringLiteral",
-      "offset": 93,
-      "length": 19,
-      "value": "\"TiniAppSDK.bundle\""
-    },
-    {
-      "filePath": "\/Users\/lap02092\/Downloads\/Projects\/Personal\/tiniapp-sdk\/packages\/tiniapp-sdk-ios\/TiniAppSDK\/Configs\/TiniAppSDKKey.swift",
-      "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 95,
       "length": 16,
       "value": "\"TiniAppRuntime\""
     },
     {
       "filePath": "\/Users\/lap02092\/Downloads\/Projects\/Personal\/tiniapp-sdk\/packages\/tiniapp-sdk-ios\/TiniAppSDK\/Configs\/TiniAppSDKKey.swift",
       "kind": "StringLiteral",
-      "offset": 178,
+      "offset": 136,
       "length": 26,
       "value": "\"tiniapp-runtime.jsbundle\""
     },
     {
       "filePath": "\/Users\/lap02092\/Downloads\/Projects\/Personal\/tiniapp-sdk\/packages\/tiniapp-sdk-ios\/TiniAppSDK\/Configs\/TiniAppSDKKey.swift",
       "kind": "StringLiteral",
-      "offset": 93,
-      "length": 19,
-      "value": "\"TiniAppSDK.bundle\""
-    },
-    {
-      "filePath": "\/Users\/lap02092\/Downloads\/Projects\/Personal\/tiniapp-sdk\/packages\/tiniapp-sdk-ios\/TiniAppSDK\/Configs\/TiniAppSDKKey.swift",
-      "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 95,
       "length": 16,
       "value": "\"TiniAppRuntime\""
     },
     {
       "filePath": "\/Users\/lap02092\/Downloads\/Projects\/Personal\/tiniapp-sdk\/packages\/tiniapp-sdk-ios\/TiniAppSDK\/Configs\/TiniAppSDKKey.swift",
       "kind": "StringLiteral",
-      "offset": 178,
+      "offset": 136,
       "length": 26,
       "value": "\"tiniapp-runtime.jsbundle\""
     }

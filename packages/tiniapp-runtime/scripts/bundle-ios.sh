@@ -1,7 +1,6 @@
 CLI_PATH=./node_modules/react-native/local-cli/cli.js
-COMPOSE_SOURCE_MAPS_PATH=./node_modules/react-native/scripts/compose-source-maps.js
 
-INTEGRATION_MODULE_IOS=../tiniapp-sdk-ios/Rescources
+INTEGRATION_MODULE_IOS=../tiniapp-sdk-ios/TiniAppSDK/Rescources
 IOS_BUNDLE_NAME=tiniapp-runtime.jsbundle
 
 if [ -d "${INTEGRATION_MODULE_IOS}" ]; then
