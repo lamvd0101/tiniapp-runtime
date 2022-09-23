@@ -1,6 +1,6 @@
 CLI_PATH=./node_modules/react-native/local-cli/cli.js
 
-INTEGRATION_MODULE_IOS=ios/Rescources
+INTEGRATION_MODULE_IOS=ios/Output/Rescources
 IOS_BUNDLE_NAME=tiniapp-runtime.jsbundle
 
 if [ -d "${INTEGRATION_MODULE_IOS}" ]; then

@@ -2,8 +2,8 @@ DIR=$PWD
 
 PROJECT_NAME=TiniAppRuntime
 FRAMEWORK_NAME=TiniAppSDK
-OUT_BUILD_DIR=$DIR/ios/build
-OUT_FW_DIR=$DIR/ios/Frameworks
+OUT_BUILD_DIR=$DIR/ios/Output/build
+OUT_FW_DIR=$DIR/ios/Output/Frameworks
 
 rm -rf $OUT_BUILD_DIR
 rm -rf $OUT_FW_DIR
