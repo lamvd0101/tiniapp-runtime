@@ -25,6 +25,7 @@
 		A82FC6BE28DDA9EE00408DD8 /* TiniAppSDK+RCTBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6BD28DDA9EE00408DD8 /* TiniAppSDK+RCTBridge.swift */; };
 		A82FC6C028DDAA0900408DD8 /* TiniAppSDK+RCTRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6BF28DDAA0900408DD8 /* TiniAppSDK+RCTRootView.swift */; };
 		A82FC6C828DDAC0300408DD8 /* TiniAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6C728DDAC0300408DD8 /* TiniAppViewController.swift */; };
+		A82FC6CB28DDD03E00408DD8 /* TiniAppRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6CA28DDD03E00408DD8 /* TiniAppRuntime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		A82FC6BD28DDA9EE00408DD8 /* TiniAppSDK+RCTBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+RCTBridge.swift"; sourceTree = "<group>"; };
 		A82FC6BF28DDAA0900408DD8 /* TiniAppSDK+RCTRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+RCTRootView.swift"; sourceTree = "<group>"; };
 		A82FC6C728DDAC0300408DD8 /* TiniAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppViewController.swift; sourceTree = "<group>"; };
+		A82FC6C928DDD03D00408DD8 /* TiniAppRuntime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TiniAppRuntime-Bridging-Header.h"; sourceTree = "<group>"; };
+		A82FC6CA28DDD03E00408DD8 /* TiniAppRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppRuntime.swift; sourceTree = "<group>"; };
 		BE2B13492C0E512234034E8D /* Pods-TiniAppSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppSDK.release.xcconfig"; path = "Target Support Files/Pods-TiniAppSDK/Pods-TiniAppSDK.release.xcconfig"; sourceTree = "<group>"; };
 		C7768692873C9D9A82009F84 /* Pods-TiniAppRuntime-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppRuntime-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TiniAppRuntime-tvOS/Pods-TiniAppRuntime-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CA4F91445021F4F173F59E1E /* Pods_TiniAppRuntimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiniAppRuntimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +182,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				A82FC6CA28DDD03E00408DD8 /* TiniAppRuntime.swift */,
+				A82FC6C928DDD03D00408DD8 /* TiniAppRuntime-Bridging-Header.h */,
 			);
 			name = TiniAppRuntime;
 			sourceTree = "<group>";
@@ -404,6 +409,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1400;
 					};
 					A82FC69828DD9E5000408DD8 = {
 						CreatedOnToolsVersion = 14.0;
@@ -650,6 +658,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				A82FC6CB28DDD03E00408DD8 /* TiniAppRuntime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29F1919985462DAA5ABDE2E9 /* Pods-TiniAppRuntimeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -738,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7C1C35482E76341C0CFE53D /* Pods-TiniAppRuntimeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = TiniAppRuntimeTests/Info.plist;
@@ -760,6 +771,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = TiniAppRuntime/Info.plist;
@@ -771,6 +783,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TiniAppRuntime;
+				SWIFT_OBJC_BRIDGING_HEADER = "TiniAppRuntime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -781,6 +796,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = TiniAppRuntime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -791,6 +807,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TiniAppRuntime;
+				SWIFT_OBJC_BRIDGING_HEADER = "TiniAppRuntime-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

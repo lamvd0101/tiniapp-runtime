@@ -36,6 +36,7 @@
     "node-jose": "^2.0.0",
     "react": "16.9.0",
     "react-native": "0.61.5",
+    "react-native-base64": "^0.2.1",
     "react-native-biometrics": "^2.1.4",
     "react-native-camera": "^4.1.1",
     "react-native-compass-heading": "^1.3.0",
@@ -63,7 +64,9 @@
     "react-swipeable-views-native": "^0.13.2",
     "rn-fetch-blob": "0.12.0",
     "tbox-commons": "^0.1.8",
-    "text-encoding": "^0.7.0"
+    "text-encoding": "^0.7.0",
+    "url-parse": "^1.4.7",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
