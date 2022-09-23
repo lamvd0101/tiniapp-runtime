@@ -3,8 +3,8 @@ require "json"
 package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 
 Pod::Spec.new do |s|
-  s.name         = "TiniAppSDK"
-  s.module_name  = "TiniAppSDK"
+  s.name         = package['name']
+  s.module_name  = package['name']
   s.version      = package['version']
   s.summary      = package['description']
   s.license      = package['license']
@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
   s.author       = package['author']
   s.homepage     = package['homepage']
 
-  s.source       = { :git => "git@github.com:lamvd0101/tiniapp-sdk-ios.git" }
+  s.source       = { :git => package['repository']['url'] }
   s.vendored_frameworks = "Frameworks/*"
   s.resource_bundles = {
-    "TiniAppSDK" => ["Rescources/*"],
+    package['name'] => ["Rescources/*"],
   }
 
   s.library = 'c++'
