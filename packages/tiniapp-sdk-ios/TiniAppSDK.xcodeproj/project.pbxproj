@@ -12,7 +12,6 @@
 		A82FC5BE28DC665600408DD8 /* TiniAppSDK+RCTRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC5BD28DC665600408DD8 /* TiniAppSDK+RCTRootView.swift */; };
 		A82FC5C128DC66A000408DD8 /* TiniAppSDKKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC5C028DC66A000408DD8 /* TiniAppSDKKey.swift */; };
 		A82FC5C328DC67C000408DD8 /* TiniAppSDK+RCTBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC5C228DC67C000408DD8 /* TiniAppSDK+RCTBridge.swift */; };
-		A82FC64428DD608500408DD8 /* Rescources in Resources */ = {isa = PBXBuildFile; fileRef = A82FC64328DD608500408DD8 /* Rescources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		A82FC5BD28DC665600408DD8 /* TiniAppSDK+RCTRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+RCTRootView.swift"; sourceTree = "<group>"; };
 		A82FC5C028DC66A000408DD8 /* TiniAppSDKKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppSDKKey.swift; sourceTree = "<group>"; };
 		A82FC5C228DC67C000408DD8 /* TiniAppSDK+RCTBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+RCTBridge.swift"; sourceTree = "<group>"; };
-		A82FC64328DD608500408DD8 /* Rescources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Rescources; sourceTree = "<group>"; };
 		A87EC0AB28D9A65300F0E1E1 /* TiniAppSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TiniAppSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5E84155232659BE7FF0E14 /* Pods-TiniAppSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppSDK.release.xcconfig"; path = "Target Support Files/Pods-TiniAppSDK/Pods-TiniAppSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +93,6 @@
 		A87EC0AD28D9A65300F0E1E1 /* TiniAppSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A82FC64328DD608500408DD8 /* Rescources */,
 				A82FC5BF28DC668900408DD8 /* Configs */,
 				A82FC5BA28DC64A700408DD8 /* Extensions */,
 			);
@@ -172,7 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82FC64428DD608500408DD8 /* Rescources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
