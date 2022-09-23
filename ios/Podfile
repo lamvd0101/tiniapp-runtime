@@ -1,7 +1,8 @@
 platform :ios, '11.0'
+use_frameworks!(:linkage => :static)
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'TiniAppRuntime' do
+def react_native_modules()
   # Pods for TiniAppRuntime
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
@@ -34,18 +35,23 @@ target 'TiniAppRuntime' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  use_native_modules!
+end
+
+target 'TiniAppRuntime' do
+  react_native_modules()
+
   target 'TiniAppRuntimeTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  use_native_modules!
 end
 
-target 'TiniAppRuntime-tvOS' do
-  # Pods for TiniAppRuntime-tvOS
+target 'TiniAppSDK' do
+  react_native_modules()
 
-  target 'TiniAppRuntime-tvOSTests' do
+  target 'TiniAppSDKTests' do
     inherit! :search_paths
     # Pods for testing
   end
