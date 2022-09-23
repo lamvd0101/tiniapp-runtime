@@ -105,8 +105,8 @@
 		A82FC6BD28DDA9EE00408DD8 /* TiniAppSDK+RCTBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+RCTBridge.swift"; sourceTree = "<group>"; };
 		A82FC6BF28DDAA0900408DD8 /* TiniAppSDK+RCTRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TiniAppSDK+RCTRootView.swift"; sourceTree = "<group>"; };
 		A82FC6C728DDAC0300408DD8 /* TiniAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppViewController.swift; sourceTree = "<group>"; };
-		A82FC6C928DDD03D00408DD8 /* TiniAppRuntime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TiniAppRuntime-Bridging-Header.h"; sourceTree = "<group>"; };
-		A82FC6CA28DDD03E00408DD8 /* TiniAppRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppRuntime.swift; sourceTree = "<group>"; };
+		A82FC6C928DDD03D00408DD8 /* TiniAppRuntime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TiniAppRuntime-Bridging-Header.h"; path = "TiniAppRuntime/TiniAppRuntime-Bridging-Header.h"; sourceTree = "<group>"; };
+		A82FC6CA28DDD03E00408DD8 /* TiniAppRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TiniAppRuntime.swift; path = TiniAppRuntime/TiniAppRuntime.swift; sourceTree = "<group>"; };
 		BE2B13492C0E512234034E8D /* Pods-TiniAppSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppSDK.release.xcconfig"; path = "Target Support Files/Pods-TiniAppSDK/Pods-TiniAppSDK.release.xcconfig"; sourceTree = "<group>"; };
 		C7768692873C9D9A82009F84 /* Pods-TiniAppRuntime-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppRuntime-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TiniAppRuntime-tvOS/Pods-TiniAppRuntime-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CA4F91445021F4F173F59E1E /* Pods_TiniAppRuntimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiniAppRuntimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -783,7 +783,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TiniAppRuntime;
-				SWIFT_OBJC_BRIDGING_HEADER = "TiniAppRuntime-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TiniAppRuntime/TiniAppRuntime-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -807,7 +807,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TiniAppRuntime;
-				SWIFT_OBJC_BRIDGING_HEADER = "TiniAppRuntime-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TiniAppRuntime/TiniAppRuntime-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
