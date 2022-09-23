@@ -1,4 +1,0 @@
-framework module TiniAppSDK {
-  header "TiniAppSDK-Swift.h"
-  requires objc
-}

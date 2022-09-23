@@ -1,10 +1,11 @@
+DIR=$PWD
 FRAMEWORK_NAME=TiniAppSDK
 
 rm -rf build
-rm -rf ${FRAMEWORK_NAME}.xcframework
+rm -rf Frameworks
 
-SIMULATOR_ARCHIVE_PATH=./build/${FRAMEWORK_NAME}-iphonesimulator.xcarchive
-DEVICE_ARCHIVE_PATH=./build/${FRAMEWORK_NAME}-iphoneos.xcarchive
+SIMULATOR_ARCHIVE_PATH=$DIR/build/${FRAMEWORK_NAME}-iphonesimulator.xcarchive
+DEVICE_ARCHIVE_PATH=$DIR/build/${FRAMEWORK_NAME}-iphoneos.xcarchive
 
 # Simulator xcarchieve
 xcodebuild archive \
@@ -28,8 +29,11 @@ xcodebuild archive \
   BUILD_LIBRARIES_FOR_DISTRIBUTION=YES \
   clean build
 
-# Create xcframwork combine of all frameworks
-xcodebuild -create-xcframework \
-  -framework ${SIMULATOR_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework \
-  -framework ${DEVICE_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework \
-  -output ${FRAMEWORK_NAME}.xcframework
+cd $SIMULATOR_ARCHIVE_PATH/Products/Library/Frameworks
+for framework in *; do
+  frameworkName=${framework//.framework/}
+  xcodebuild -create-xcframework \
+    -framework $SIMULATOR_ARCHIVE_PATH/Products/Library/Frameworks/$frameworkName.framework \
+    -framework $DEVICE_ARCHIVE_PATH/Products/Library/Frameworks/$frameworkName.framework \
+    -output $DIR/Frameworks/$frameworkName.xcframework
+done
