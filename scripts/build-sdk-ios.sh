@@ -9,5 +9,5 @@ cd packages/tiniapp-sdk-ios
 pod install
 sh Scripts/build-fw.sh
 
-# 3.
+# 3. Return root
 cd -

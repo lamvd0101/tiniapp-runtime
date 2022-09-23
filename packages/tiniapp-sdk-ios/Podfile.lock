@@ -220,92 +220,119 @@ PODS:
   - Yoga (1.14.0)
 
 DEPENDENCIES:
-  - DoubleConversion
-  - FBLazyVector
-  - FBReactNativeSpec
-  - Folly
-  - glog
-  - RCTRequired
-  - RCTTypeSafety
-  - React
-  - React-Core
-  - React-Core/DevSupport
-  - React-Core/RCTWebSocket
-  - React-CoreModules
-  - React-cxxreact
-  - React-jsi
-  - React-jsiexecutor
-  - React-jsinspector
-  - React-RCTActionSheet
-  - React-RCTAnimation
-  - React-RCTBlob
-  - React-RCTImage
-  - React-RCTLinking
-  - React-RCTNetwork
-  - React-RCTSettings
-  - React-RCTText
-  - React-RCTVibration
-  - ReactCommon/jscallinvoker
-  - ReactCommon/turbomodule/core
-  - Yoga
+  - DoubleConversion (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - FBLazyVector (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/FBLazyVector`)
+  - FBReactNativeSpec (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/FBReactNativeSpec`)
+  - Folly (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - glog (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - RCTRequired (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/RCTRequired`)
+  - RCTTypeSafety (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/TypeSafety`)
+  - React (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/`)
+  - React-Core (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/`)
+  - React-Core/DevSupport (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/`)
+  - React-Core/RCTWebSocket (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/`)
+  - React-CoreModules (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/React/CoreModules`)
+  - React-cxxreact (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/cxxreact`)
+  - React-jsi (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/jsi`)
+  - React-jsiexecutor (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/jsiexecutor`)
+  - React-jsinspector (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/jsinspector`)
+  - React-RCTActionSheet (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/ActionSheetIOS`)
+  - React-RCTAnimation (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/NativeAnimation`)
+  - React-RCTBlob (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Blob`)
+  - React-RCTImage (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Image`)
+  - React-RCTLinking (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/LinkingIOS`)
+  - React-RCTNetwork (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Network`)
+  - React-RCTSettings (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Settings`)
+  - React-RCTText (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Text`)
+  - React-RCTVibration (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Vibration`)
+  - ReactCommon/jscallinvoker (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon`)
+  - ReactCommon/turbomodule/core (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon`)
+  - Yoga (from `/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  https://github.com/lamvd0101/tini-app-third-party-ios:
+  trunk:
     - boost-for-react-native
-    - DoubleConversion
-    - FBLazyVector
-    - FBReactNativeSpec
-    - Folly
-    - glog
-    - RCTRequired
-    - RCTTypeSafety
-    - React
-    - React-Core
-    - React-CoreModules
-    - React-cxxreact
-    - React-jsi
-    - React-jsiexecutor
-    - React-jsinspector
-    - React-RCTActionSheet
-    - React-RCTAnimation
-    - React-RCTBlob
-    - React-RCTImage
-    - React-RCTLinking
-    - React-RCTNetwork
-    - React-RCTSettings
-    - React-RCTText
-    - React-RCTVibration
-    - ReactCommon
-    - Yoga
+
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  FBLazyVector:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/FBLazyVector"
+  FBReactNativeSpec:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/FBReactNativeSpec"
+  Folly:
+    :podspec: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/third-party-podspecs/Folly.podspec"
+  glog:
+    :podspec: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/third-party-podspecs/glog.podspec"
+  RCTRequired:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/RCTRequired"
+  RCTTypeSafety:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/TypeSafety"
+  React:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/"
+  React-Core:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/"
+  React-CoreModules:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/React/CoreModules"
+  React-cxxreact:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/cxxreact"
+  React-jsi:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/jsi"
+  React-jsiexecutor:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/jsiexecutor"
+  React-jsinspector:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/jsinspector"
+  React-RCTActionSheet:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/ActionSheetIOS"
+  React-RCTAnimation:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/NativeAnimation"
+  React-RCTBlob:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Blob"
+  React-RCTImage:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Image"
+  React-RCTLinking:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/LinkingIOS"
+  React-RCTNetwork:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Network"
+  React-RCTSettings:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Settings"
+  React-RCTText:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Text"
+  React-RCTVibration:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/Libraries/Vibration"
+  ReactCommon:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon"
+  Yoga:
+    :path: "/Users/lap02092/Downloads/Projects/Personal/tiniapp-sdk/packages/tiniapp-runtime/node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  boost-for-react-native: 4d17d8f97f76e4eb9556a0a00e7b7ca3a02077a3
-  DoubleConversion: 5c9ce68940263addb34b1297fea24d650a32b92f
-  FBLazyVector: 0e8807f53d869dd75f1376faca746ecf41d53e27
-  FBReactNativeSpec: bb847cfa80e0f57df8f6b552cbe92f43264a46d4
-  Folly: 67e5794bb00e6ea586292080eebb5e1f3529bc5b
-  glog: 4ba5f5b95b18fbb84fa3222fe8f62d9825a3d15e
-  RCTRequired: b3f43303b9302c189ae99b43bffba09434acc723
-  RCTTypeSafety: 2ed04cb4a2d79228526faace65afc147f45fc920
-  React: 66abf4f9061b905754f7f9fb2877c549e6126ecb
-  React-Core: 0402153c630c5857f4fcdb984a18df5075ac2b46
-  React-CoreModules: 04938d2e8cc6e122584079dcc2e2d4f743f0b01b
-  React-cxxreact: 8adba71e08621da652275bfbbe6d084fda2e2a02
-  React-jsi: b2a9010905a9a96a9fe1db8d3587a4ddf0ff7e66
-  React-jsiexecutor: 4d5be78c10877299734a23fa3e31b9bcc90da837
-  React-jsinspector: 8f6c61a29a39694664557b21176f635c172ccac8
-  React-RCTActionSheet: efb3ecef718d7d5dfe226726256b2166b427d85f
-  React-RCTAnimation: 6e5f56fc7c7230922aa87f729eb180ae4a130a66
-  React-RCTBlob: 09a81223d470f0fb6b07e31b66106028e8d56680
-  React-RCTImage: 29f964303232d111b3f8e689f50d6d678b05c364
-  React-RCTLinking: fa7c961f932cde1a4fd07f9b54806233c6c45c21
-  React-RCTNetwork: 4cc27cf0ed728b5c3bb567627656082ed562b9eb
-  React-RCTSettings: 3a95368c5a734b90995e35db54fcdab8dc37d460
-  React-RCTText: 8b55494e7fa269af6f137a50d73f667175ec02e7
-  React-RCTVibration: 8ff8eed33c866e89c0a979514be0871762e95a4f
-  ReactCommon: 02c3295405c8f4156cb66851baa51438fa4db6a8
-  Yoga: 267c4fc612b16d4f5efe03e18ee84639f827cda2
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
+  FBLazyVector: aaeaf388755e4f29cd74acbc9e3b8da6d807c37f
+  FBReactNativeSpec: 118d0d177724c2d67f08a59136eb29ef5943ec75
+  Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
+  glog: 1f3da668190260b06b429bb211bfbee5cd790c28
+  RCTRequired: b153add4da6e7dbc44aebf93f3cf4fcae392ddf1
+  RCTTypeSafety: 9aa1b91d7f9310fc6eadc3cf95126ffe818af320
+  React: b6a59ef847b2b40bb6e0180a97d0ca716969ac78
+  React-Core: 688b451f7d616cc1134ac95295b593d1b5158a04
+  React-CoreModules: d04f8494c1a328b69ec11db9d1137d667f916dcb
+  React-cxxreact: d0f7bcafa196ae410e5300736b424455e7fb7ba7
+  React-jsi: cb2cd74d7ccf4cffb071a46833613edc79cdf8f7
+  React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
+  React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
+  React-RCTActionSheet: 600b4d10e3aea0913b5a92256d2719c0cdd26d76
+  React-RCTAnimation: 791a87558389c80908ed06cc5dfc5e7920dfa360
+  React-RCTBlob: d89293cc0236d9cb0933d85e430b0bbe81ad1d72
+  React-RCTImage: 6b8e8df449eb7c814c99a92d6b52de6fe39dea4e
+  React-RCTLinking: 121bb231c7503cf9094f4d8461b96a130fabf4a5
+  React-RCTNetwork: fb353640aafcee84ca8b78957297bd395f065c9a
+  React-RCTSettings: 8db258ea2a5efee381fcf7a6d5044e2f8b68b640
+  React-RCTText: 9ccc88273e9a3aacff5094d2175a605efa854dbe
+  React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
+  ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
+  Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
-PODFILE CHECKSUM: 7fa5e44ff9e102294c2d354d04eb71bb47dcf7ae
+PODFILE CHECKSUM: 07f454b432df25b0d3d2eaffc4a571c21570869d
 
 COCOAPODS: 1.11.3
