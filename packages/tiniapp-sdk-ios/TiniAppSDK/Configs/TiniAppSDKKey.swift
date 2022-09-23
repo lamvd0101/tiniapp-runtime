@@ -1,17 +1,10 @@
 //
-//  TiniAppSDK+Bundle.swift
+//  TiniAppSDKKey.swift
 //  TiniAppSDK
 //
 
-public extension Bundle {
-    static func getTiniAppBundle() -> URL? {
-        let bundle: Bundle = Bundle.main
-        guard var bundleURL = bundle.resourceURL else {
-            return nil
-        }
-        
-        bundleURL.appendPathComponent("\(BundleKey.bundleName.rawValue)/\(BundleKey.jsBundleName.rawValue)")
-        
-        return bundleURL
-    }
+enum BundleKey: String {
+    case bundleName = "TiniAppSDK.bundle"
+    case jsModuleName = "TiniAppRuntime"
+    case jsBundleName = "tiniapp-runtime.jsbundle"
 }
