@@ -24,10 +24,6 @@ const isUniversalLink = urlString => {
 };
 
 const openURL = (url = '') => {
-  if (isDeepLink(url) || isUniversalLink(url)) {
-    // TKRNLinking.openURL(url);
-    return;
-  }
   Linking.openURL(url);
 };
 

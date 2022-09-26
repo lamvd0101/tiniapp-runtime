@@ -1,7 +1,6 @@
 import React from 'react';
 
 import PolicyModal from '../../components/DialogPolicy';
-import {NativeNavigator} from '../../libs';
 import {getPolicy} from '../../services/policy';
 import AsyncStorage from '../../utils/async-storage';
 

@@ -15,10 +15,9 @@ export function queryAppList() {
 }
 
 export async function queryAppInfo(appId) {
-  return makeRequest(
-    `apps/${appId}`,
-    new Configs().package.APP_REGISTRY,
-  ).then(res => res.json());
+  return makeRequest(`apps/${appId}`, new Configs().package.APP_REGISTRY).then(
+    res => res.json(),
+  );
 }
 
 export function queryDevAppList(

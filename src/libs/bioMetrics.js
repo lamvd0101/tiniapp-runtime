@@ -1,11 +1,9 @@
 import ReactNativeBiometrics from 'react-native-biometrics';
+
 export default class BioMetrics {
   async isBioMetricsAvailable() {
-    const {
-      available,
-      biometryType,
-      error,
-    } = await ReactNativeBiometrics.isSensorAvailable();
+    const {available, biometryType, error} =
+      await ReactNativeBiometrics.isSensorAvailable();
     //mapping bio type
     let mode;
     if (biometryType === ReactNativeBiometrics.TouchID) {
@@ -20,14 +18,11 @@ export default class BioMetrics {
     return new Promise(async (resolve, reject) => {
       try {
         const {content = '', challenge} = params;
-        const {
-          success,
-          error,
-          signature,
-        } = await ReactNativeBiometrics.createSignature({
-          promptMessage: content,
-          payload: challenge,
-        });
+        const {success, error, signature} =
+          await ReactNativeBiometrics.createSignature({
+            promptMessage: content,
+            payload: challenge,
+          });
         if (success) {
           resolve({success, signature});
         } else {

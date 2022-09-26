@@ -16,7 +16,6 @@ import TboxCommons from 'tbox-commons';
 import Configs from '../../configs';
 import {
   ApiService,
-  Auth,
   BioMetrics,
   Chat,
   Contact,
@@ -24,7 +23,6 @@ import {
   InterstitialAd,
   Location,
   NativeNavigator,
-  Payment,
   Security,
   SecurityStorage,
   tracker,
@@ -89,8 +87,6 @@ const MiniApp = props => {
       Dimensions,
       StatusBar,
       AsyncStorage,
-      Auth,
-      Payment,
       Keyboard: TboxCommons,
       Clipboard,
       Linking,

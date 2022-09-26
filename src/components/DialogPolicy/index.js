@@ -1,4 +1,3 @@
-// import {NativeNavigationService} from '@app/utils/native-navigation';
 import * as React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 

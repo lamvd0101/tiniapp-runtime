@@ -35,6 +35,7 @@ export default function AppList(props) {
   }
 
   function renderItem({item}) {
+    console.log(item);
     return <AppItem {...item} onPress={() => onPress(item)} />;
   }
 

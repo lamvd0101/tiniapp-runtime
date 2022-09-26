@@ -10,7 +10,7 @@ const SECURITY_AGENT_DOMAINS = [
 ];
 export const initInterceptNetwork = () => {
   const unregister = fetchIntercept.register({
-    response: async function(response) {
+    response: async function (response) {
       try {
         const urlString = response.request?.url;
         const url = parse(urlString);
@@ -54,7 +54,7 @@ export const initInterceptNetwork = () => {
       return response;
     },
 
-    responseError: function(error) {
+    responseError: function (error) {
       return Promise.reject(error);
     },
   });

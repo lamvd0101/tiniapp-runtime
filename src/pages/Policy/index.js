@@ -23,8 +23,7 @@ export default ({route, navigation}) => {
             backImage={() => (
               <Image
                 source={{
-                  uri:
-                    'https://salt.tikicdn.com/ts/tiniapp/19/d1/ed/8d72c048e88859c58fc8986ef72e7251.png',
+                  uri: 'https://salt.tikicdn.com/ts/tiniapp/19/d1/ed/8d72c048e88859c58fc8986ef72e7251.png',
                 }}
                 style={s.backButton__icon}
               />

@@ -1,5 +1,6 @@
 import {NativeModules, Platform} from 'react-native';
 const {TKRNTracking} = NativeModules;
+
 export const getInterstitialAd = async params => {
   return new Promise(async (resolve, reject) => {
     let cookie = '2b9a4b52-73c9-1ad5-28cd-b3e5d9e4d816'; // default cookie

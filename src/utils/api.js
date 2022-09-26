@@ -1,4 +1,3 @@
-// import {ApiUtil} from '@tiki/common';
 import {Platform} from 'react-native';
 
 import AppProps from '../app.props';
@@ -79,7 +78,6 @@ export const tikiServiceRequest = (
       'Content-Type': 'application/json',
       'x-access-token': accessToken,
       'X-TiniApp-Platform': `mobile-${Platform.OS}`,
-      // 'User-Agent': await ApiUtil.getUserAgent(props.environment),
       ...rawHeaders,
     };
 

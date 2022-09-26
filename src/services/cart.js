@@ -1,7 +1,4 @@
 import {tikiServiceRequest} from '../utils/api';
-import AppProps from '../app.props';
-import Configs from '../configs';
-import {AppError} from '../models';
 
 const fetchData = async (accessToken, page = 1) => {
   const res = await tikiServiceRequest(
