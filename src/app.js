@@ -3,11 +3,11 @@ import 'react-native-gesture-handler';
 import React, {Component} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-import AppEmitterEvents from './AppEmitterEvents';
-import EventEmitter from './EventEmitter';
 import AppContainer from './app.container';
 import AppProps from './app.props';
+import AppEmitterEvents from './AppEmitterEvents';
 import Configs from './configs';
+import EventEmitter from './EventEmitter';
 
 // please disable this one when we have inter font
 window.ENABLE_INTER_FONT = true;

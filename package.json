@@ -11,7 +11,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint . --max-warnings 0 --ext .js,.jsx,.ts,.tsx",
     "build-sdk-ios": "sh scripts/bundle-ios.sh && sh scripts/build-fw-ios.sh"
   },
   "dependencies": {
@@ -81,13 +81,13 @@
     "babel-jest": "^24.9.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-transform-remove-console": "^6.9.4",
-    "eslint": "^6.5.1",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.7.1",
     "react-test-renderer": "16.9.0",
     "typescript": "^3.7.3"
   },
