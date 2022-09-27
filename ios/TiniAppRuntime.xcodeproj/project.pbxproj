@@ -26,6 +26,7 @@
 		A82FC6C028DDAA0900408DD8 /* TiniAppSDK+RCTRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6BF28DDAA0900408DD8 /* TiniAppSDK+RCTRootView.swift */; };
 		A82FC6C828DDAC0300408DD8 /* TiniAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6C728DDAC0300408DD8 /* TiniAppViewController.swift */; };
 		A82FC6CB28DDD03E00408DD8 /* TiniAppRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82FC6CA28DDD03E00408DD8 /* TiniAppRuntime.swift */; };
+		A8BF157728E2C32A00ED0B3D /* TiniAppLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF157628E2C32A00ED0B3D /* TiniAppLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		A82FC6C728DDAC0300408DD8 /* TiniAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppViewController.swift; sourceTree = "<group>"; };
 		A82FC6C928DDD03D00408DD8 /* TiniAppRuntime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TiniAppRuntime-Bridging-Header.h"; path = "TiniAppRuntime/TiniAppRuntime-Bridging-Header.h"; sourceTree = "<group>"; };
 		A82FC6CA28DDD03E00408DD8 /* TiniAppRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TiniAppRuntime.swift; path = TiniAppRuntime/TiniAppRuntime.swift; sourceTree = "<group>"; };
+		A8BF157628E2C32A00ED0B3D /* TiniAppLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiniAppLoadingView.swift; sourceTree = "<group>"; };
 		BE2B13492C0E512234034E8D /* Pods-TiniAppSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppSDK.release.xcconfig"; path = "Target Support Files/Pods-TiniAppSDK/Pods-TiniAppSDK.release.xcconfig"; sourceTree = "<group>"; };
 		C7768692873C9D9A82009F84 /* Pods-TiniAppRuntime-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiniAppRuntime-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TiniAppRuntime-tvOS/Pods-TiniAppRuntime-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CA4F91445021F4F173F59E1E /* Pods_TiniAppRuntimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiniAppRuntimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				A82FC6C728DDAC0300408DD8 /* TiniAppViewController.swift */,
+				A8BF157628E2C32A00ED0B3D /* TiniAppLoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A82FC6BA28DDA99C00408DD8 /* TiniAppSDKKey.swift in Sources */,
+				A8BF157728E2C32A00ED0B3D /* TiniAppLoadingView.swift in Sources */,
 				A82FC6C828DDAC0300408DD8 /* TiniAppViewController.swift in Sources */,
 				A82FC6BE28DDA9EE00408DD8 /* TiniAppSDK+RCTBridge.swift in Sources */,
 				A82FC6C028DDAA0900408DD8 /* TiniAppSDK+RCTRootView.swift in Sources */,
