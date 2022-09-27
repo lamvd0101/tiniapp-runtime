@@ -19,8 +19,9 @@ async function goToTargetScreen(props) {
     let routeName;
     let params;
 
-    if (appProps.insideTiki) {
-      let url = appProps?.moduleParams?.deepLink;
+    if (true) {
+      // let url = appProps?.moduleParams?.deepLink;
+      let url = 'tikivn://apps/vn.tiki.miniapp.demo';
       const source = appProps?.moduleParams?.source;
       const appInfoFromUrl = getMiniAppInfo(url);
       const appId = appInfoFromUrl?.appId;
