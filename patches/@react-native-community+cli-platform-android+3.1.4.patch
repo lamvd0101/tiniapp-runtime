@@ -1,0 +1,62 @@
+diff --git a/node_modules/@react-native-community/cli-platform-android/native_modules.gradle b/node_modules/@react-native-community/cli-platform-android/native_modules.gradle
+index 8f5dc40..7db39dc 100644
+--- a/node_modules/@react-native-community/cli-platform-android/native_modules.gradle
++++ b/node_modules/@react-native-community/cli-platform-android/native_modules.gradle
+@@ -71,12 +71,13 @@ public class PackageList {
+ 
+ class ReactNativeModules {
+   private Logger logger
+-  private String packageName
+   private String jsAppDir
+   private ArrayList<HashMap<String, String>> reactNativeModules
+ 
+   private static String LOG_PREFIX = ":ReactNative:"
+ 
++  public String packageName
++
+   ReactNativeModules(Logger logger, String jsAppDir) {
+     this.logger = logger
+     this.jsAppDir = jsAppDir
+@@ -111,6 +112,18 @@ class ReactNativeModules {
+     }
+   }
+ 
++    /**
++   * Adds the react native modules as dependencies to the users `app` project
++   */
++  void addReactNativeModuleDependenciesUseApi(Project appProject) {
++    reactNativeModules.forEach { reactNativeModule ->
++      def nameCleansed = reactNativeModule["nameCleansed"]
++      appProject.dependencies {
++        api project(path: ":${nameCleansed}")
++      }
++    }
++  }
++
+   /**
+    * Code-gen a java file with all the detected ReactNativePackage instances automatically added
+    *
+@@ -251,12 +264,21 @@ ext.applyNativeModulesSettingsGradle = { DefaultSettings defaultSettings, String
+   autoModules.addReactNativeModuleProjects(defaultSettings)
+ }
+ 
+-ext.applyNativeModulesAppBuildGradle = { Project project, String root = null ->
++ext.applyNativeModulesAppBuildGradle = { Project project, String root = null, Boolean useApi = false, String packageName = null ->
+   if (root != null) {
+     logger.warn("${ReactNativeModules.LOG_PREFIX}Passing custom root is deprecated. CLI detects root automatically now");
+     logger.warn("${ReactNativeModules.LOG_PREFIX}Please remove second argument to `applyNativeModulesAppBuildGradle`.");
+   }
+-  autoModules.addReactNativeModuleDependencies(project)
++
++  if (useApi) {
++    autoModules.addReactNativeModuleDependenciesUseApi(project)
++  } else {
++    autoModules.addReactNativeModuleDependencies(project)
++  }
++
++  if (packageName != null) {
++    autoModules.packageName = packageName
++  }
+ 
+   def generatedSrcDir = new File(buildDir, "generated/rncli/src/main/java")
+   def generatedCodeDir = new File(generatedSrcDir, generatedFilePackage.replace('.', '/'))
