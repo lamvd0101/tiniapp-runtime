@@ -1,3 +1,4 @@
 cd android
-./gradlew build -p TiniAppSDK
+# ./gradlew clean TiniAppSDK:assembleRelease
+./gradlew clean -x app:assembleRelease assembleRelease
 cd -

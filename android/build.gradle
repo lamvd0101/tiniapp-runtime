@@ -2,7 +2,7 @@
 
 buildscript {
     ext {
-        buildToolsVersion = "30.0.2"
+        buildToolsVersion = "30.0.3"
         minSdkVersion = 21
         compileSdkVersion = 30
         targetSdkVersion = 30
@@ -10,9 +10,11 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath('com.android.tools.build:gradle:4.2.1')
+        classpath('com.github.kezong:fat-aar:1.3.8')
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -20,7 +22,8 @@ buildscript {
 }
 
 allprojects {
-//    buildDir = "$rootDir/SDKOutput/libs/${project.name}"
+    buildDir = "$rootDir/build/libs/${project.name}"
+    tasks.withType(Javadoc).all { enabled = false }
 
     repositories {
         mavenLocal()
@@ -37,8 +40,28 @@ allprojects {
         jcenter()
         maven { url 'https://jitpack.io' }
 
+        // Add hermes
         flatDir {
             dirs "$rootDir/../node_modules/hermes-engine/android"
         }
     }
+}
+
+subprojects {
+  afterEvaluate {
+    project ->
+      if (project.hasProperty("android")) {
+        android {
+            compileSdkVersion = 30
+            buildToolsVersion = "30.0.3"
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_1_8
+                targetCompatibility JavaVersion.VERSION_1_8
+            }
+            lintOptions {
+                abortOnError false
+            }
+        }
+      }
+  }
 }

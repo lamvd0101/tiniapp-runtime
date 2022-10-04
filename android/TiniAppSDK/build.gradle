@@ -1,4 +1,5 @@
 apply plugin: "com.android.library"
+apply plugin: "com.kezong.fat-aar"
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -7,16 +8,26 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         missingDimensionStrategy 'react-native-camera', 'general'
     }
+
+    // buildTypes {
+    //     debug {
+    //         minifyEnabled true
+    //     }
+    //     release {
+    //         minifyEnabled true
+    //     }
+    // }
 }
 
 dependencies {
-    implementation "com.facebook.react:react-native:+"
-    implementation(name: "hermes-release", ext: "aar")
+    embed("com.facebook.react:react-native:+")
+    embed(name: "hermes-release", ext: "aar")
 }
 
-apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project, null, true, "vn.tiki.TiniAppSDK")
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project, null, false, "vn.tiki.TiniAppSDK")
