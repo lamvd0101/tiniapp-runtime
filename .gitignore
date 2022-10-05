@@ -64,6 +64,6 @@ buck-out/
 Pods/
 
 # SDK
-SDKOutput/Rescources/
-SDKOutput/Frameworks/
-SDKOutput/libs/
+*/SDKOutput/Rescources/
+*/SDKOutput/Frameworks/
+*/SDKOutput/libs/
