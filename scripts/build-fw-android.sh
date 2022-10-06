@@ -1,8 +1,8 @@
 DIR=$PWD
 
-# cd android
-# ./gradlew clean -x app:assembleRelease assembleRelease
-# cd -
+cd android
+./gradlew clean -x app:assembleRelease assembleRelease
+cd -
 
 BUILD_LIBS=$DIR/android/build/libs
 OUTPUT_LIBS=$DIR/android/SDKOutput/libs
