@@ -11,10 +11,8 @@ rm -rf $OUTPUT_LIBS
 mkdir $OUTPUT_LIBS
 
 cd $BUILD_LIBS
-for lib in *; do
-  libPath=$BUILD_LIBS/$lib/outputs/aar/*-release.aar
-  if [ -e "$libPath" ]; then
-    cp $libPath $OUTPUT_LIBS/$lib-release.aar
-  fi
+find . -name "*-release.aar" | while read f; do
+  echo "$f"
+  cp $f $OUTPUT_LIBS
 done
 cd -
