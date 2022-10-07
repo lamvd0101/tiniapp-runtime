@@ -12,7 +12,7 @@ mkdir $OUTPUT_LIBS
 
 cd $BUILD_LIBS
 for lib in *; do
-  libPath=$BUILD_LIBS/$lib/outputs/aar/$lib-release.aar
+  libPath=$BUILD_LIBS/$lib/outputs/aar/*-release.aar
   if [ -e "$libPath" ]; then
     cp $libPath $OUTPUT_LIBS/$lib-release.aar
   fi
