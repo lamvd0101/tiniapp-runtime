@@ -66,6 +66,7 @@ Pods/
 # SDK
 */SDKOutput/Rescources/
 */SDKOutput/Frameworks/
+*/SDKOutput/projects/
 */SDKOutput/libs/
 android/TiniAppSDK/src/main/assets
 android/TiniAppSDK/src/main/res

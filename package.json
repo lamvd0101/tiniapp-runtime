@@ -13,7 +13,7 @@
     "test": "jest",
     "lint": "eslint . --max-warnings 0 --ext .js,.jsx,.ts,.tsx",
     "build-sdk-ios": "sh scripts/bundle-ios.sh && sh scripts/build-fw-ios.sh",
-    "build-sdk-android": "sh scripts/bundle-android.sh && sh scripts/build-fw-android.sh"
+    "build-sdk-android": "sh scripts/bundle-android.sh && sh scripts/build-fw-android.sh && node scripts/copy-libs.js"
   },
   "dependencies": {
     "@adrianso/react-native-device-brightness": "1.2.4",
@@ -86,6 +86,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^8.0.0",
+    "fs-extra": "^10.1.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "patch-package": "^6.2.2",
