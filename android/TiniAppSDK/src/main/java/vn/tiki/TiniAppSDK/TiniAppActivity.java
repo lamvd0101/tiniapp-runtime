@@ -1,7 +1,47 @@
 package vn.tiki.TiniAppSDK;
 
-import com.facebook.react.ReactActivity;
+import android.app.Activity;
+import android.os.Bundle;
 
-public class TiniAppActivity extends ReactActivity {
+import com.facebook.react.ReactInstanceManager;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.ReactRootView;
+import com.facebook.react.common.LifecycleState;
+import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
+import com.facebook.soloader.SoLoader;
+import com.facebook.react.PackageList;
 
+import java.util.List;
+
+public class TiniAppActivity extends Activity implements DefaultHardwareBackBtnHandler {
+    private ReactRootView mReactRootView;
+    private ReactInstanceManager mReactInstanceManager;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        SoLoader.init(this, false);
+
+        mReactRootView = new ReactRootView(this);
+        List<ReactPackage> packages = new PackageList(getApplication()).getPackages();
+
+        mReactInstanceManager = ReactInstanceManager.builder()
+                .setApplication(getApplication())
+                .setCurrentActivity(this)
+                .setBundleAssetName("tiniapp-runtime.jsbundle")
+                .setJSMainModulePath("index")
+                .addPackages(packages)
+                .setUseDeveloperSupport(BuildConfig.DEBUG)
+                .setInitialLifecycleState(LifecycleState.RESUMED)
+                .build();
+
+        mReactRootView.startReactApplication(mReactInstanceManager, "TiniAppRuntime", null);
+
+        setContentView(mReactRootView);
+    }
+
+    @Override
+    public void invokeDefaultOnBackPressed() {
+        super.onBackPressed();
+    }
 }
