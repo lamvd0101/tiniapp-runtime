@@ -1,5 +1,9 @@
 const fs = require('fs-extra');
 
+const outputPath = './android/SDKOutput/projects';
+
+fs.remove(outputPath);
+
 const config =
   require('@react-native-community/cli/build/tools/config/index').default();
 
@@ -18,10 +22,7 @@ for (const name in dependencies) {
 
     if (androidConfig && androidConfig.sourceDir) {
       const libName = name.replace(/@|\//gi, '_');
-      fs.copy(
-        androidConfig.sourceDir,
-        `./android/SDKOutput/projects/${libName}`,
-      );
+      fs.copy(androidConfig.sourceDir, `${outputPath}/${libName}`);
       console.log(`Copy lib: ${libName}`);
     }
   }
