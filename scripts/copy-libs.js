@@ -15,15 +15,15 @@ if (!project) {
 }
 
 for (const name in dependencies) {
-  if (dependencies.hasOwnProperty(name)) {
-    const value = dependencies[name];
-    const platformsConfig = value.platforms;
-    const androidConfig = platformsConfig.android;
+  // if (dependencies.hasOwnProperty(name)) {
+  //   const value = dependencies[name];
+  //   const platformsConfig = value.platforms;
+  //   const androidConfig = platformsConfig.android;
 
-    if (androidConfig && androidConfig.sourceDir) {
-      const libName = name.replace(/@|\//gi, '_');
-      fs.copy(androidConfig.sourceDir, `${outputPath}/${libName}`);
-      console.log(`Copy lib: ${libName}`);
-    }
-  }
+  //   if (androidConfig && androidConfig.sourceDir) {
+  //     const libName = name.replace(/@|\//gi, '_');
+  //     fs.copy(androidConfig.sourceDir, `${outputPath}/${libName}`);
+  //     console.log(`Copy lib: ${libName}`);
+  //   }
+  // }
 }
