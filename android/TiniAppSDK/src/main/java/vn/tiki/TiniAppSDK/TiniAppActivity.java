@@ -1,7 +1,8 @@
 package vn.tiki.TiniAppSDK;
 
-import android.app.Activity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactPackage;
@@ -13,7 +14,7 @@ import com.facebook.react.PackageList;
 
 import java.util.List;
 
-public class TiniAppActivity extends Activity implements DefaultHardwareBackBtnHandler {
+public class TiniAppActivity extends AppCompatActivity implements DefaultHardwareBackBtnHandler {
     private ReactRootView mReactRootView;
     private ReactInstanceManager mReactInstanceManager;
 
