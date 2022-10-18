@@ -47,20 +47,51 @@ allprojects {
 }
 
 subprojects {
-  afterEvaluate {
-    project ->
-      if (project.hasProperty("android")) {
-        android {
-            compileSdkVersion = 30
-            buildToolsVersion = "30.0.3"
-            compileOptions {
-                sourceCompatibility JavaVersion.VERSION_1_8
-                targetCompatibility JavaVersion.VERSION_1_8
+    afterEvaluate {
+        project ->
+            if (project.hasProperty("android")) {
+                android {
+                    compileSdkVersion = 30
+                    buildToolsVersion = "30.0.3"
+                    compileOptions {
+                        sourceCompatibility JavaVersion.VERSION_1_8
+                        targetCompatibility JavaVersion.VERSION_1_8
+                    }
+                    lintOptions {
+                        abortOnError false
+                    }
+                }
             }
-            lintOptions {
-                abortOnError false
-            }
+    }
+}
+
+// Get all dependencies
+def dependencies = []
+
+task getDeps() {
+    subprojects {
+        afterEvaluate {
+            project ->
+                if (project.name != "TiniAppSDK") {
+                    def arr = project.configurations.getByName("implementation").allDependencies + project.configurations.getByName("compile").allDependencies
+                    arr.each { dep ->
+                        if (dep.group != null && dep.group != "TiniAppRuntime" && dep.name != "react-native") {
+                            dependencies += "${dep.group}:${dep.name}:${dep.version}"
+                        }
+                    }
+                }
         }
-      }
-  }
+    }
+}
+
+task createGradleFile() {
+    doFirst {
+        def str = ""
+        dependencies.each {
+            str += it + "\n"
+        }
+        new File("${rootDir}/SDKOutput", "libs.txt").text = str
+    }
+    finalizedBy 'getDeps'
+
 }
