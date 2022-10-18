@@ -7,6 +7,7 @@ OUTPUT=$DIR/android/SDKOutput
 
 rm -rf $OUTPUT
 mkdir $OUTPUT
+mkdir $OUTPUT/libs
 
 cd android
 ./gradlew clean -x app:assembleRelease assembleRelease
