@@ -3,7 +3,7 @@ RN_AAR=$DIR/node_modules/react-native/android/com/facebook/react/react-native/0.
 HERMES_AAR=$DIR/node_modules/hermes-engine/android/hermes-release.aar
 
 BUILD_LIBS=$DIR/android/build/libs
-OUTPUT=$DIR/android/SDKOutput/libs
+OUTPUT=$DIR/android/SDKOutput
 
 rm -rf $OUTPUT
 mkdir $OUTPUT
